@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Erasmus Programı Sonuçları</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #003399; /* AB mavi rengi */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 30px;
+            position: relative;
+        }
+        h1 {
+            color: #003399;
+        }
+        .loading {
+            text-align: center;
+            margin: 30px 0;
+            display: block;
+        }
+        .hidden {
+            display: none;
+        }
+        .result {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 24px;
+        }
+        .emoji {
+            font-size: 72px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #999;
+            font-size: 12px;
+        }
+        .credit {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Erasmus+ Programı 2025-2026 Sonuçları</h1>
+    </div>
+    
+    <div class="container">
+        <h2>Öğrenci Değişim Programı Sonuçları</h2>
+        
+        <div id="loading" class="loading">
+            <p>Sonuçlar yükleniyor, lütfen bekleyin...</p>
+            <img src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca_w200.gif" alt="Loading">
+        </div>
+        
+        <div id="result" class="hidden">
+            <div class="emoji">😜</div>
+            <div class="result">
+                <h2>ŞAKALANDIN!</h2>
+                <p>1 Nisan şakası!</p>
+                <p>Erasmus sonuçları henüz açıklanmadı, ama yüzündeki o heyecanı görmeliydin!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Not: Bu sayfa sadece 1 Nisan şakası amacıyla oluşturulmuştur. Resmi Erasmus sonuçları için lütfen üniversitenizin resmi web sitesini ziyaret edin.</p>
+        </div>
+    </div>
+    
+    <div class="credit">Kerem Vapur tarafından hazırlandı.</div>
+    
+    <script>
+        // Sayfayı 3 saniye sonra "Şakalandın" kısmına yönlendir
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('result').classList.remove('hidden');
+        }, 3000);
+    </script>
+</body>
+</html>
