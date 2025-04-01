@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Erasmus+ Programı - Ana Sayfa</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .welcome-banner {
+            background-image: url('img/erasmus-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            position: relative;
+        }
+        .welcome-banner:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            border-radius: 4px;
+        }
+        .welcome-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .welcome-title {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .welcome-text {
+            font-size: 18px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .welcome-button {
+            display: inline-block;
+            background-color: #003399;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .feature-box {
+            background-color: white;
+            border-radius: 4px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #003399;
+        }
+        .feature-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .feature-text {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .news-section {
+            margin: 40px 0;
+        }
+        .news-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            color: #003399;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+        .news-card {
+            background-color: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .news-content {
+            padding: 20px;
+        }
+        .news-date {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .news-headline {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .news-excerpt {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .news-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #003399;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <img src="img/logo.png" alt="Erasmus+ Logo" class="logo">
+            <div class="header-text">
+                <h1>Erasmus+ Programı Yönetim Sistemi</h1>
+                <p>2025-2026 Akademik Yılı Öğrenci Değişim Programı</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav">
+        <div class="nav-content">
+            <a href="anasayfa.html" class="nav-item active">Ana Sayfa</a>
+            <a href="index.html" class="nav-item">Başvuru Sonuçları</a>
+            <a href="belgeler.html" class="nav-item">Belgeler</a>
+            <a href="sss.html" class="nav-item">Sıkça Sorulan Sorular</a>
+            <a href="iletisim.html" class="nav-item">İletişim</a>
+            <div class="user-info">
+                <span class="user-name">Öğrenci Girişi</span>
+                <img src="img/user-icon.png" class="user-icon" alt="User">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="welcome-banner">
+            <div class="welcome-content">
+                <h1 class="welcome-title">Avrupa Deneyiminiz Başlıyor</h1>
+                <p class="welcome-text">Erasmus+ Programı ile farklı ülkelerde eğitim alın, kültürleri keşfedin ve unutulmaz deneyimler yaşayın.</p>
+                <a href="#" class="welcome-button">Başvuru Yap</a>
+            </div>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <div class="feature-icon">🎓</div>
+                <h3 class="feature-title">Eğitim Hareketliliği</h3>
+                <p class="feature-text">Program ülkelerindeki üniversitelerde 3-12 ay arasında eğitim alabilir, akademik ve kültürel deneyimler kazanabilirsiniz.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">💼</div>
+                <h3 class="feature-title">Staj Hareketliliği</h3>
+                <p class="feature-text">Avrupa'daki işletmelerde 2-12 ay arasında staj yapabilir, kariyer gelişiminize katkı sağlayabilirsiniz.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">💶</div>
+                <h3 class="feature-title">Hibe Desteği</h3>
+                <p class="feature-text">Erasmus+ Programı kapsamında yurtdışındaki eğitim ve yaşam giderleriniz için aylık hibe desteği alabilirsiniz.</p>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="news-title">Duyurular ve Haberler</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://erasmus-plus.ec.europa.eu/sites/default/files/styles/eplus_website_page_header_image/public/2021-06/Education%20and%20training.jpg" class="news-image" alt="Erasmus Duyuru">
+                    <div class="news-content">
+                        <div class="news-date">31 Mart 2025</div>
+                        <h3 class="news-headline">2025-2026 Akademik Yılı Başvuru Sonuçları</h3>
+                        <p class="news-excerpt">2025-2026 akademik yılı için Erasmus+ öğrenim hareketliliği başvuru sonuçları açıklanmıştır. Sonuçları kontrol etmek için tıklayınız.</p>
+                        <a href="index.html" class="news-link">Detaylar →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://erasmus-plus.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_medium/public/2021-05/6_Inclusion%20and%20diversity.jpg" class="news-image" alt="Oryantasyon">
+                    <div class="news-content">
+                        <div class="news-date">15 Mart 2025</div>
+                        <h3 class="news-headline">Oryantasyon Toplantısı Duyurusu</h3>
+                        <p class="news-excerpt">2025-2026 akademik yılı için Erasmus+ programına yerleşen öğrencilerin oryantasyon toplantısı 20 Nisan 2025 tarihinde yapılacaktır.</p>
+                        <a href="#" class="news-link">Detaylar →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <strong>Bilgilendirme:</strong> Erasmus+ programına başvurular her akademik yılda bir kez olmak üzere güz ve bahar dönemleri için topluca alınmaktadır. Başvuru takvimi ve koşulları için sitemizi düzenli olarak takip ediniz.
+        </div>
+    </div>
+    
+    <div class="page-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Erasmus+ Ofisi</h3>
+                <p>Üniversite Merkez Kampüsü, A Blok, 2. Kat</p>
+                <p>Tel: +90 212 XXX XX XX</p>
+                <p>E-posta: erasmus@universite.edu.tr</p>
+            </div>
+            <div class="footer-column">
+                <h3>Hızlı Erişim</h3>
+                <ul>
+                    <li><a href="#">Erasmus+ Politika Beyanı</a></li>
+                    <li><a href="#">Anlaşmalı Üniversiteler</a></li>
+                    <li><a href="#">Erasmus+ El Kitabı</a></li>
+                    <li><a href="#">Akademik Takvim</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Faydalı Bağlantılar</h3>
+                <ul>
+                    <li><a href="https://erasmus-plus.ec.europa.eu/" target="_blank">Erasmus+ Resmi Sitesi</a></li>
+                    <li><a href="https://www.ua.gov.tr/" target="_blank">Ulusal Ajans</a></li>
+                    <li><a href="#" target="_blank">Üniversite Ana Sayfası</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Üniversite Erasmus+ Ofisi. Tüm hakları saklıdır.</p>
+            <div class="eu-logo">
+                <img src="img/eu-flag.jpg" alt="European Union">
+                <p>Bu proje Avrupa Birliği tarafından finanse edilmektedir.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="credit">Kerem Vapur tarafından hazırlandı.</div>
+</body>
+</html>
