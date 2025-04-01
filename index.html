@@ -83,7 +83,7 @@
                 <p>Erasmus sonuçları henüz açıklanmadı, ama yüzündeki o heyecanı görmeliydin!</p>
             </div>
             
-            <div class="footer">
+            <div id="footer" class="footer hidden">
                 <p>Not: Bu sayfa sadece 1 Nisan şakası amacıyla oluşturulmuştur. Resmi Erasmus sonuçları için lütfen üniversitenizin resmi web sitesini ziyaret edin.</p>
             </div>
         </div>
@@ -96,6 +96,11 @@
         setTimeout(function() {
             document.getElementById('loading').classList.add('hidden');
             document.getElementById('result').classList.remove('hidden');
+            
+            // Footer'ı 2 saniye sonra göster
+            setTimeout(function() {
+                document.getElementById('footer').classList.remove('hidden');
+            }, 2000);
         }, 3000);
     </script>
 </body>
