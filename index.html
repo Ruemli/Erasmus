@@ -3,190 +3,31 @@
 <head>
     <title>Erasmus+ Programı Sonuçları - 2025-2026</title>
     <meta charset="UTF-8">
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .header {
-            background-color: #003399; /* AB mavi rengi */
-            color: white;
-            padding: 15px 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-        }
-        .logo {
-            height: 60px;
-            margin-right: 20px;
-        }
-        .header-text {
-            flex-grow: 1;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 500;
-        }
-        .header p {
-            margin: 5px 0 0 0;
-            font-size: 14px;
-            opacity: 0.9;
-        }
-        .nav {
-            background-color: #f5f5f5;
-            border-bottom: 1px solid #ddd;
-            padding: 10px 20px;
-        }
-        .nav-item {
-            display: inline-block;
-            margin-right: 20px;
-            font-size: 14px;
-            color: #444;
-            text-decoration: none;
-            padding: 5px 0;
-        }
-        .nav-item.active {
-            color: #003399;
-            border-bottom: 2px solid #003399;
-            font-weight: 500;
-        }
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background-color: white;
-            padding: 25px;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        }
-        .content-header {
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 25px;
-        }
-        .content-header h2 {
-            color: #003399;
-            font-size: 22px;
-            margin: 0 0 10px 0;
-            font-weight: 500;
-        }
-        .content-header p {
-            margin: 0;
-            color: #666;
-            font-size: 14px;
-        }
-        .loading-container {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .loading-text {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .loading-spinner {
-            width: 50px;
-            height: 50px;
-            margin: 0 auto;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #003399;
-            border-radius: 50%;
-            animation: spin 2s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .info-box {
-            background-color: #e8f4f8;
-            border-left: 4px solid #5bc0de;
-            padding: 15px;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        .hidden {
-            display: none;
-        }
-        .result-container {
-            text-align: center;
-            padding: 30px 0;
-        }
-        .emoji {
-            font-size: 60px;
-            margin-bottom: 20px;
-        }
-        .result-message {
-            font-size: 28px;
-            color: #FF5722;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .result-details {
-            font-size: 18px;
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #777;
-            font-size: 13px;
-        }
-        .credit {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            font-size: 12px;
-            color: #999;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: 500;
-        }
-        .status-label {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-        }
-        .status-pending {
-            background-color: #FFF3CD;
-            color: #856404;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="header">
-        <img src="https://erasmus-plus.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_medium/public/2021-05/EU-flag-Erasmus+_0.jpg" alt="Erasmus+ Logo" class="logo">
-        <div class="header-text">
-            <h1>Erasmus+ Programı Yönetim Sistemi</h1>
-            <p>2025-2026 Akademik Yılı Öğrenci Değişim Programı</p>
+        <div class="header-content">
+            <img src="img/logo.png" alt="Erasmus+ Logo" class="logo">
+            <div class="header-text">
+                <h1>Erasmus+ Programı Yönetim Sistemi</h1>
+                <p>2025-2026 Akademik Yılı Öğrenci Değişim Programı</p>
+            </div>
         </div>
     </div>
     
     <div class="nav">
-        <a href="#" class="nav-item">Ana Sayfa</a>
-        <a href="#" class="nav-item active">Başvuru Sonuçları</a>
-        <a href="#" class="nav-item">Belgeler</a>
-        <a href="#" class="nav-item">Sıkça Sorulan Sorular</a>
-        <a href="#" class="nav-item">İletişim</a>
+        <div class="nav-content">
+            <a href="anasayfa.html" class="nav-item">Ana Sayfa</a>
+            <a href="index.html" class="nav-item active">Başvuru Sonuçları</a>
+            <a href="belgeler.html" class="nav-item">Belgeler</a>
+            <a href="sss.html" class="nav-item">Sıkça Sorulan Sorular</a>
+            <a href="iletisim.html" class="nav-item">İletişim</a>
+            <div class="user-info">
+                <span class="user-name">Öğrenci Girişi</span>
+                <img src="img/user-icon.png" class="user-icon" alt="User">
+            </div>
+        </div>
     </div>
     
     <div class="container">
@@ -196,21 +37,45 @@
         </div>
         
         <div class="info-box">
-            <strong>Bilgilendirme:</strong> Yerleştirme sonuçları, öğrencilerin akademik başarı notu, yabancı dil puanı ve varsa eklenip çıkarılan ilave puanlar dikkate alınarak oluşturulmuştur. Sonuçlara itiraz için son tarih 15 Nisan 2025'tir.
+            <strong>Bilgilendirme:</strong> Yerleştirme sonuçları, öğrencilerin akademik başarı notu (%50), yabancı dil puanı (%50) ve varsa eklenip çıkarılan ilave puanlar dikkate alınarak oluşturulmuştur. Sonuçlara itiraz için son tarih 15 Nisan 2025'tir. İtirazlarınızı erasmus@universite.edu.tr adresine iletebilirsiniz.
+        </div>
+        
+        <div class="announcement">
+            <div class="announcement-title">Önemli Duyurular</div>
+            <ul>
+                <li>Yerleştirme sonuçları açıklanmıştır. (01.04.2025)</li>
+                <li>Hibe açıklamaları 15 Nisan 2025 tarihinde yapılacaktır.</li>
+                <li>Yerleştirme sonucu olumlu olan öğrencilerin oryantasyon toplantısı 20 Nisan 2025 tarihinde gerçekleştirilecektir.</li>
+            </ul>
         </div>
         
         <div id="loading" class="loading-container">
             <p class="loading-text">Sonuçlar yükleniyor, lütfen bekleyin...</p>
             <div class="loading-spinner"></div>
-            <p style="font-size: 13px; color: #777; margin-top: 15px;">Sistem yoğunluğu nedeniyle yükleme işlemi biraz zaman alabilir.</p>
+            <p class="loading-info">Sistem yoğunluğu nedeniyle yükleme işlemi biraz zaman alabilir. Sayfayı yenilemeyiniz.</p>
         </div>
         
         <div id="tableContent" class="hidden">
+            <div class="filter-section">
+                <div class="filter-title">Sonuçları Filtrele:</div>
+                <div class="filter-inputs">
+                    <input type="text" placeholder="Öğrenci No" class="filter-input">
+                    <select class="filter-select">
+                        <option value="">Tüm Fakülteler</option>
+                        <option value="muhendislik">Mühendislik Fakültesi</option>
+                        <option value="isletme">İşletme Fakültesi</option>
+                        <option value="fen">Fen Edebiyat Fakültesi</option>
+                    </select>
+                    <button class="filter-button">Filtrele</button>
+                </div>
+            </div>
+            
             <table>
                 <thead>
                     <tr>
                         <th>Öğrenci No</th>
                         <th>Fakülte/Bölüm</th>
+                        <th>Sıralama Puanı</th>
                         <th>Yerleştirme Durumu</th>
                         <th>Yerleştirilen Üniversite</th>
                         <th>Ülke</th>
@@ -219,27 +84,54 @@
                 <tbody>
                     <tr>
                         <td>20240001</td>
-                        <td>Mühendislik Fakültesi</td>
+                        <td>Mühendislik Fakültesi / Bilgisayar Müh.</td>
+                        <td>82.5</td>
                         <td><span class="status-label status-pending">İşlemde</span></td>
                         <td>Değerlendiriliyor</td>
                         <td>-</td>
                     </tr>
                     <tr>
                         <td>20240002</td>
-                        <td>İşletme Fakültesi</td>
+                        <td>İşletme Fakültesi / İşletme</td>
+                        <td>79.8</td>
                         <td><span class="status-label status-pending">İşlemde</span></td>
                         <td>Değerlendiriliyor</td>
                         <td>-</td>
                     </tr>
                     <tr>
                         <td>20240003</td>
-                        <td>Fen Edebiyat Fakültesi</td>
+                        <td>Fen Edebiyat Fakültesi / İngiliz Dili</td>
+                        <td>88.2</td>
+                        <td><span class="status-label status-pending">İşlemde</span></td>
+                        <td>Değerlendiriliyor</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>20240004</td>
+                        <td>Mühendislik Fakültesi / Makine Müh.</td>
+                        <td>75.3</td>
+                        <td><span class="status-label status-pending">İşlemde</span></td>
+                        <td>Değerlendiriliyor</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>20240005</td>
+                        <td>Tıp Fakültesi</td>
+                        <td>91.7</td>
                         <td><span class="status-label status-pending">İşlemde</span></td>
                         <td>Değerlendiriliyor</td>
                         <td>-</td>
                     </tr>
                 </tbody>
             </table>
+            
+            <div class="pagination">
+                <a href="#" class="page-link">«</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">»</a>
+            </div>
         </div>
         
         <div id="result" class="hidden">
@@ -249,6 +141,7 @@
                 <div class="result-details">
                     <p>1 Nisan şakası!</p>
                     <p>Erasmus sonuçları henüz açıklanmadı, ama yüzündeki o heyecanı görmeliydin!</p>
+                    <p>Gerçek sonuçlar için resmi duyuruları takip etmeye devam et.</p>
                 </div>
             </div>
         </div>
@@ -258,26 +151,43 @@
         </div>
     </div>
     
+    <div class="page-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Erasmus+ Ofisi</h3>
+                <p>Üniversite Merkez Kampüsü, A Blok, 2. Kat</p>
+                <p>Tel: +90 212 XXX XX XX</p>
+                <p>E-posta: erasmus@universite.edu.tr</p>
+            </div>
+            <div class="footer-column">
+                <h3>Hızlı Erişim</h3>
+                <ul>
+                    <li><a href="#">Erasmus+ Politika Beyanı</a></li>
+                    <li><a href="#">Anlaşmalı Üniversiteler</a></li>
+                    <li><a href="#">Erasmus+ El Kitabı</a></li>
+                    <li><a href="#">Akademik Takvim</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Faydalı Bağlantılar</h3>
+                <ul>
+                    <li><a href="https://erasmus-plus.ec.europa.eu/" target="_blank">Erasmus+ Resmi Sitesi</a></li>
+                    <li><a href="https://www.ua.gov.tr/" target="_blank">Ulusal Ajans</a></li>
+                    <li><a href="#" target="_blank">Üniversite Ana Sayfası</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Üniversite Erasmus+ Ofisi. Tüm hakları saklıdır.</p>
+            <div class="eu-logo">
+                <img src="img/eu-flag.jpg" alt="European Union">
+                <p>Bu proje Avrupa Birliği tarafından finanse edilmektedir.</p>
+            </div>
+        </div>
+    </div>
+    
     <div class="credit">Kerem Vapur tarafından hazırlandı.</div>
     
-    <script>
-        // Önce yükleniyor ekranını göster
-        setTimeout(function() {
-            // Sonra tabloyu kısa süreliğine göster
-            document.getElementById('loading').classList.add('hidden');
-            document.getElementById('tableContent').classList.remove('hidden');
-            
-            // 1.5 saniye sonra şaka ekranını göster
-            setTimeout(function() {
-                document.getElementById('tableContent').classList.add('hidden');
-                document.getElementById('result').classList.remove('hidden');
-                
-                // Şakadan 2 saniye sonra footer'ı göster
-                setTimeout(function() {
-                    document.getElementById('footer').classList.remove('hidden');
-                }, 2000);
-            }, 1500);
-        }, 3000);
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
